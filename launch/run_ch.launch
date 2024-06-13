@@ -13,7 +13,7 @@ Date: 2019/11/23
   <arg name="py_openpose_path" default="none" />
 
   <!-- the value of this argument can only be one of the following: realsense, kinect, zed2, nodepth -->
-  <arg name="camera" default="realsense" />
+  <arg name="camera" default="nodepth" />
 
   <!-- set this flag to see invoke RViz -->
   <arg name="rviz" default="true" />
@@ -32,10 +32,10 @@ Date: 2019/11/23
    to do so, please change the value, as shown in the example below.
   -->
   <?ignore
-    <arg name="openpose_args" value="--hand --disable_multi_thread --model_folder /home/robocanes/openpose/models/" />
+    <arg name="openpose_args" value="--pose" />
   ?>
   <!-- full path to the model dir of openpose -->
-  <arg name="openpose_args" value="--model_folder $(env HOME)/openpose/models/" />
+  <arg name="openpose_args" value="--model_folder /home/robocanes/openpose/models/" />
 
   <!-- rostopic to publish the 3D skeleton data -->
   <arg name="pub_topic" default="/frame" />

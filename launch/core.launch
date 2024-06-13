@@ -76,7 +76,7 @@ Date: 2020/03/02
 
  <!-- print ros message to terminal -->
   <group if="$(arg print)" >
-    <node name="echo" pkg="ros_openpose" type="echo.py" output="screen" required="true" >
+    <node name="echo" pkg="robocup23" type="recognize_gesture_posture_gpsr.py" output="screen" required="true" >
       <param name="pub_topic" value="$(arg pub_topic)" />
     </node>
   </group>
