@@ -32,7 +32,7 @@ Date: 2019/11/23
    to do so, please change the value, as shown in the example below.
   -->
   <?ignore
-    <arg name="openpose_args" value="--pose" />
+    <arg name="openpose_args" value="--display 0 --pose" />
   ?>
   <!-- full path to the model dir of openpose -->
   <arg name="openpose_args" value="--model_folder /home/robocanes/openpose/models/" />

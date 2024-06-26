@@ -245,7 +245,7 @@ def main():
         if display:
             while not rospy.is_shutdown():
                 if rop.frame is not None:
-                    cv2.imshow("Ros OpenPose", rop.frame)
+                    # cv2.imshow("Ros OpenPose", rop.frame)
                     cv2.waitKey(1)
         else:
             rospy.spin()

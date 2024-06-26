@@ -20,6 +20,8 @@ set(OPENPOSE_DIR /home/robocanes/openpose)
 set(OPENPOSE_INCLUDE_DIRS ${OPENPOSE_DIR}/include)
 set(OPENPOSE_LINK_LIBRARY ${OPENPOSE_DIR}/build/lib/libopenpose.so)
 
+
+
 ## Make sure 'FindGFlags.cmake' and 'FindGlog.cmake' are visible to cmake
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake/Modules")
 
