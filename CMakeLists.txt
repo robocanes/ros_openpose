@@ -16,7 +16,9 @@ find_package(catkin REQUIRED COMPONENTS
   message_filters
 )
 
-set(OPENPOSE_DIR /home/robocanes/openpose)
+#set(OPENPOSE_DIR /home/robocanes/openpose)
+#set(OPENPOSE_DIR /home/cduarte/gitwork/hsr_robocanes/src/openpose)
+set(OPENPOSE_DIF ${OPENPOSE_PATH})
 set(OPENPOSE_INCLUDE_DIRS ${OPENPOSE_DIR}/include)
 set(OPENPOSE_LINK_LIBRARY ${OPENPOSE_DIR}/build/lib/libopenpose.so)
 
