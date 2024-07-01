@@ -38,6 +38,8 @@ Date: 2019/11/23
   <?ignore
   <arg name="openpose_args" value="--model_folder $(env HOME)/openpose/models/" />
   ?>
+
+  <arg name="openpose_args"/>
   
   <!-- rostopic to publish the 3D skeleton data -->
   <arg name="pub_topic" default="/frame" />
