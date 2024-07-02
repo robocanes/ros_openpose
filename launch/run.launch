@@ -36,10 +36,10 @@ Date: 2019/11/23
   ?>
   <!-- full path to the model dir of openpose -->
   <?ignore
-  <arg name="openpose_args" value="--model_folder $(env HOME)/openpose/models/" />
+    <arg name="openpose_args" value="--model_folder $(env HOME)/openpose/models/" />
   ?>
 
-  <arg name="openpose_args"/>
+  <arg name="openpose_args" default="--model_folder $(env OPENPOSE_PATH)/models"/>
   
   <!-- rostopic to publish the 3D skeleton data -->
   <arg name="pub_topic" default="/frame" />
